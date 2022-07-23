@@ -20,3 +20,14 @@ public:
         return vec;
     }
 };
+
+int main(){
+    vector<int> v1= {1,3,2,1,3,2,2};
+    vector<int> v2= {1,1};
+    vector<int> v3= {0};
+    Solution obj;
+    cout<<obj.numberOfPairs(v1)[0]<<" "<<obj.numberOfPairs(v1)[1]<<"\n";
+    cout<<obj.numberOfPairs(v2)[0]<<" "<<obj.numberOfPairs(v2)[1]<<"\n";
+    cout<<obj.numberOfPairs(v3)[0]<<" "<<obj.numberOfPairs(v3)[1]<<"\n";
+    return 0;
+}

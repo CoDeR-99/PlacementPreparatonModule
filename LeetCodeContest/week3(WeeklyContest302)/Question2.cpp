@@ -29,3 +29,12 @@ public:
         return ans;
     }
 };
+
+int main(){
+    vector<int> v1= {18,43,36,13,7};
+    vector<int> v2= {10,12,19,14};
+    Solution obj;
+    cout<<obj.maximumSum(v1)<<"\n";
+    cout<<obj.maximumSum(v2)<<"\n";
+    return 0;
+}

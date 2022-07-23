@@ -27,3 +27,21 @@ public:
         return ans;
     }
 };
+
+int main(){
+    vector<string> num1= {"102","473","251","814"};
+    vector<vector<int>> queries1= {{1,1},{2,3},{4,2},{1,2}};
+    vector<string> num2= {"24","37","96","04"};
+    vector<vector<int>> queries2= {{2,1},{2,2}};
+    Solution obj;
+    vector<int> ans1= obj.smallestTrimmedNumbers(num1, queries1);
+    vector<int> ans2= obj.smallestTrimmedNumbers(num2, queries2);
+    for(auto x: ans1){
+        cout<<x<<" ";
+    }
+    cout<<"\n";
+    for(auto x: ans2){
+        cout<<x<<" ";
+    }
+    return 0;
+}
